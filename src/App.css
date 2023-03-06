@@ -1,0 +1,23 @@
+.search {
+  display: grid;
+  grid-template-columns: 40% 58%;
+  gap: 2%;
+}
+.subway_search {
+  background: rgba(255, 255, 255, 0.313);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 600ms ease;
+}
+.subway_search:hover {
+  background: transparent;
+  border-color: #00abe1;
+  cursor: default;
+}
+@media screen and (max-width: 700px) {
+  .search {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

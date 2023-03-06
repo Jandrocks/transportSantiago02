@@ -1,0 +1,73 @@
+.title {
+  padding-left: 0.8rem;
+  font-size: 3rem;
+}
+.card_List {
+  border-radius: 2rem;
+  padding: 2rem;
+  background-image: url("../src/assets/bus_bg.png");
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.card {
+  background: var(--color-bg-variant);
+  border-radius: 0 0 2rem 2rem;
+  height: fit-content;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--color-primary);
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.head_title {
+  background: var(--color-primary);
+  padding: 2rem;
+  border-radius: 0 0 2rem 2rem;
+  box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.head_title li {
+  columns: var(--color-bg);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.buses_distance {
+  background-color: rgba(43, 139, 59, 0.459);
+  border-radius: 0 0 1rem 1rem;
+  margin: 2px;
+  text-align: left;
+  margin: 15px;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.title_Bus {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .services {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

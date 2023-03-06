@@ -1,0 +1,39 @@
+.input {
+  width: 100%;  
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid #00abe1;
+  resize: none;
+  color: #fff;
+  font-size: 1.5rem;
+
+  padding: 15px 15px 15px 60px;
+}
+
+input::placeholder {
+  color: rgba(194, 194, 194, 0.425);
+}
+
+input:focus {
+  outline-width: 0;
+  border: solid 1px white;
+}
+.search_bus {
+  background: rgba(255, 255, 255, 0.313);
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 600ms ease;
+}
+
+.search_bus:hover {
+  background: transparent;
+  border-color: #00abe1;
+  cursor: default;
+}
+
+.icon {
+  position: absolute;
+  margin-left: 15px;
+  margin-top: 7px;
+}
